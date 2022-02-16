@@ -1,0 +1,54 @@
+
+
+
+.div-top span{
+ color: #FABE4C ;
+ 
+}
+.div-top h1{
+ color:#363958;
+ font-size: 80px;
+ font-weight: 600;
+ 
+
+}
+.div-top p{
+    font-size: 16px;
+    text-align: left;
+}
+
+.button {
+    background-color:#A4BC46 ;
+    color: white;
+    padding: 10px 20px 10px 20px ;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    border-radius: 5px;
+
+}
+
+/* products */
+.wojac{
+ padding-top:80px;
+ font-size: 48px;
+ color: #363958;
+}
+
+.bg{
+    background-color: #F1F1F1;
+    padding: 15px ;
+    border-radius: 10px;
+}
+h4{
+    color: #363958;
+    font-size: 24px;
+    
+}
+.price{
+    color:#FABE4C;
+    font-size: 36px;
+    font-weight: 900;
+
+}
