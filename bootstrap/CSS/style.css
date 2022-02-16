@@ -1,17 +1,43 @@
 
-
-.bg{
-    background-color: #F1F1F1;
-    padding: 10px ;
-    border-radius: 10px;
+.incom{
+    margin: 0px 0px 0px -30px ;
 }
 
+
+/* all input filed */
+.bg{
+    
+    background-color: #F1F1F1;
+    padding: 5px ;
+    border-radius: 10px;
+}
+ /* cloth input filed */
 .cloth{
   margin: 0px 0px 50px -28px  ;
 }
 
 /* calculate button */
 .calc{
-    margin: 0px 0px 0px 164px;
+    margin: 0px 0px 0px 230px;
 
+}
+
+
+
+/* save */
+.saveMoneyFiled{
+
+    width:40%;
+    background-color: #F1F1F1;
+    padding: 5px ;
+    border-radius: 10px;
+    display: inline;
+}
+.savePersn{
+margin: -10px 20px 0px -56px;
+}
+
+#saveBttoun{
+
+    margin: -10px 0px 0px 0px;
 }
