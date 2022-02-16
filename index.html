@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>An overview of monthly earnings and costs </title>
-</head>
-<body>
-    <section></section>
+    <title>Monthly earnings and costs </title>
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/dfc2caf162.js" crossorigin="anonymous"></script>
+     <!-- bootstrap link -->
+        <link rel="stylesheet" href="bootstrap/CSS/bootstrap.min.css">
+        <!-- style css -->
+      <link rel="stylesheet" href="bootstrap/CSS/style.css">  
 
-    <section></section>
-    <section></section>
+</head>
+
+    <header>
+        <h1 class=" fs-3 fw-bold text-center text-primary mt-5">Monthly Earnings And Costs </h1> 
+         
+    </header>
+<body>
+    <main>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img class="img-fluid" src="image/money.jpg" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class=" fs-3 fw-bold text-center text-primary mt-5">Income </h1> 
+                    <div>
+                        <p class=" fs-4 fw-bold text-center mt-5">Income: <input class="bg" id=" incomeInput" type="text"> </p> 
+                    </div>
+
+                    <div class="food">
+                        <h1 class=" fs-3 fw-bold text-center text-primary mt-5">Expenses</h1>
+                        <p class=" fs-4 fw-bold text-center mt-5">Food: <input class="bg" id=" foodInput" type="text"> </p>
+                        <p class=" fs-4 fw-bold text-center mt-0">Rent: <input class="bg" id=" rentInput" type="text"> </p> 
+                        <p class=" cloth fs-4 fw-bold text-center mt-0">Clothes: <input class="bg" id=" clothesInput" type="text"> </p> 
+                        <button id="claculate"class="btn btn-info alig btn-lg calc"  > Calculate</button>
+                        
+                    </div>
+                  </div>
+                
+                </div>
+              
+        </section>
+
+    </main>
+
+         <!-- bootstrap js file -->
+    <script src="bootstrap/JS/bootstrap.min.js"></script>
+        <!-- my js file -->
+   <script src="bootstrap/JS/app.js"></script> 
 </body>
 </html>
