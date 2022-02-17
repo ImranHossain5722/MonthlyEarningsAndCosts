@@ -58,3 +58,8 @@ margin: -10px 20px 0px -56px;
     color: rgba(0, 128, 0, 0.541);
     font-size: 40px;
 }
+#remainingBalance{
+
+    font-size: 50px;
+    color: coral;
+};
