@@ -11,19 +11,17 @@ document.getElementById('calculate').addEventListener('click', function(){
     const monthlyFoodTextCost = monthlyFoodCost.value;
     const monthlyFoodCostAmount = parseFloat(monthlyFoodTextCost);
     
-    // console.log(monthlyFoodCostAmount);
         // rent cost input value
     const monthlyRentCost = document.getElementById('rentInput');
     const monthlyRentTextCost = monthlyRentCost.value ;
     const monthlyRentCostAmount = parseFloat(monthlyRentTextCost);
-    // console.log(monthlyRentCostAmount);
 
         // cloth cost input filed 
     const clothCost = document.getElementById('clothesInput');
     const clothTextCost = clothCost.value ;
     const clothCostAmount = parseFloat(clothTextCost);
 
-    // console.log(clothCostAmount);
+
 
     // total Total Expenses: 
     const totalExpanse = monthlyFoodCostAmount + monthlyRentCostAmount + clothCostAmount ;  
