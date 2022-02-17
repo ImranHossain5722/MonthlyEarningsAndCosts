@@ -49,24 +49,41 @@ document.getElementById('calculate').addEventListener('click', function(){
 // save money calculate
 
 document.getElementById('saveButton').addEventListener('click', function(){
-    const monthlyIncome = document.getElementById('incomeInput');
-    const monthlyIncomeText = monthlyIncome.value ;
-    const monthlyIncomeAmount = parseFloat(monthlyIncomeText);
+        const monthlyIncome = document.getElementById('incomeInput');
+        const monthlyIncomeText = monthlyIncome.value ;
+        const monthlyIncomeAmount = parseFloat(monthlyIncomeText);
 
         //Percentage calculate
-const saveMoney = document.getElementById('saveInput');
-const saveMoneyText = saveMoney.value ;
-const saveMoneyAmount = parseFloat(saveMoneyText); 
+        const saveMoney = document.getElementById('saveInput');
+        const saveMoneyText = saveMoney.value ;
+        const saveMoneyAmount = parseFloat(saveMoneyText); 
 
-const totalSaveMoney =  saveMoney.value /  100 ;
-const PercentageSveMoney = totalSaveMoney * monthlyIncomeAmount ;
+        const totalSaveMoney =  saveMoney.value /  100 ;
+        const PercentageSveMoney = totalSaveMoney * monthlyIncomeAmount ;
  
-   console.log(PercentageSveMoney);
-  
+
+            //save amount calculate
+
         const savingMoney = document.getElementById('savingAmount');
         const savingMoneyText = savingMoney.innerText;
         const savingMoneyAmount = parseFloat(savingMoneyText);
             savingMoney.innerText =PercentageSveMoney;
+
+            //aTotal Balance
+        const totalBalance = document.getElementById('afterExpensesBalance');
+        const totalBalanceText = totalBalance.innerText;
+        const totalBalanceAmount = parseFloat(totalBalanceText);
+        totalBalance.innerText = totalBalanceAmount ;
+
+        
+            
+        //remaining balance 
+        const remainingBalance = document.getElementById('remainingBalance')  
+         const remainingBalanceText = remainingBalance.innerText;
+         const remainingBalanceAmount = parseFloat(remainingBalanceText);
+         const remainingAmount =  totalBalanceAmount - PercentageSveMoney;
+         remainingBalance.innerText = remainingAmount ;
+
 
 
 })

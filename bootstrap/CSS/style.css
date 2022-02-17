@@ -52,3 +52,9 @@ margin: -10px 20px 0px -56px;
     color:rgb(36, 174, 216);
     font-size:40px;
 }
+
+#savingAmount{
+
+    color: rgba(0, 128, 0, 0.541);
+    font-size: 40px;
+}
