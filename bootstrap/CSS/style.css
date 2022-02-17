@@ -41,3 +41,14 @@ margin: -10px 20px 0px -56px;
 
     margin: -10px 0px 0px 0px;
 }
+
+#totalExpenses{
+    color: red;
+    font-size:35px ;
+}
+
+#afterExpensesBalance{
+
+    color:rgb(36, 174, 216);
+    font-size:40px;
+}

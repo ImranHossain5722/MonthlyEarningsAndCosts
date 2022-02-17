@@ -26,17 +26,47 @@ document.getElementById('calculate').addEventListener('click', function(){
     // console.log(clothCostAmount);
 
     // total Total Expenses: 
-    const totalExpanse = monthlyFoodCostAmount + monthlyRentCostAmount + clothCostAmount ;
-    //console.log(totalExpanse);
-    
+    const totalExpanse = monthlyFoodCostAmount + monthlyRentCostAmount + clothCostAmount ;  
+    // show in ui total Expanse
+    const expanseBalance = document.getElementById('totalExpenses');
+    const expanseBalanceText = expanseBalance.innerText;
+    const expanseBalanceAmount = parseFloat(expanseBalanceText);
+    expanseBalance.innerText = totalExpanse ;
+
+
     //  Balance 
     const afterExpanseBalance =  monthlyIncomeAmount - totalExpanse;
-    console.log(afterExpanseBalance);
+   // console.log(afterExpanseBalance);
+    
+    //after Expanse Total Balance
+    const totalBalance = document.getElementById('afterExpensesBalance');
+    const totalBalanceText = totalBalance.innerText;
+    const totalBalanceAmount = parseFloat(totalBalanceText);
+    totalBalance.innerText = afterExpanseBalance ;
 
+})
 
-  // show in ui total exp
+// save money calculate
 
+document.getElementById('saveButton').addEventListener('click', function(){
+    const monthlyIncome = document.getElementById('incomeInput');
+    const monthlyIncomeText = monthlyIncome.value ;
+    const monthlyIncomeAmount = parseFloat(monthlyIncomeText);
 
+        //Percentage calculate
+const saveMoney = document.getElementById('saveInput');
+const saveMoneyText = saveMoney.value ;
+const saveMoneyAmount = parseFloat(saveMoneyText); 
+
+const totalSaveMoney =  saveMoney.value /  100 ;
+const PercentageSveMoney = totalSaveMoney * monthlyIncomeAmount ;
+ 
+   console.log(PercentageSveMoney);
+  
+        const savingMoney = document.getElementById('savingAmount');
+        const savingMoneyText = savingMoney.innerText;
+        const savingMoneyAmount = parseFloat(savingMoneyText);
+            savingMoney.innerText =PercentageSveMoney;
 
 
 })
